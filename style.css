@@ -1,5 +1,6 @@
 body {
     position: relative;
+    /* display: inline; */
     width: 100%;
     font-family: sans-serif;
     margin: 0;
@@ -22,6 +23,7 @@ img {
     /* background-color: rgb(173, 192, 173); */
     /* box-align: stretch; */
     justify-content: space-around;
+    top: 20px;
 }
 
 .tileContainer div {
@@ -38,3 +40,113 @@ img {
     margin: 10px 10px auto;
     
 }
+
+#weather {
+    position: relative;
+    margin: 20px 50px;
+    float: left;
+    width: 20%;
+    /* background-color: grey; */
+}
+
+p {
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px #4b4b4b;
+    font-size: 18px;
+}
+
+#condition {
+    position: relative;
+    color: rgb(255, 255, 255);
+    /* font-weight: bold; */
+    text-shadow: 2px 2px #4b4b4b;
+}
+
+#temp {
+    color: white;
+    font-weight: 400;
+    font-size: 130px;
+    text-shadow: 2px 2px #4b4b4b;
+    margin: -20px -9px;
+}
+
+/* blockquote {
+    position: absolute;
+    float: right;
+    width: 60%;
+    top: 0;
+    right: 0;
+} */
+
+.block {
+    position: absolute;
+    /* right: -60px; */
+    top: 90px;
+    left: 220px;
+    /* float: right; */
+    margin-left: 80px;
+    /* background-color: grey; */
+    max-width: 70%;
+}
+
+blockquote{
+    display:block;
+    background: rgba(255, 255, 255, 0);
+    padding: 15px 20px 15px 45px;
+    margin: 0 0 20px;
+    position: relative;
+    float: right;
+    /* width: 100%; */
+    
+    /*Font*/
+    font-family: Georgia, serif;
+    font-size: 20px;
+    line-height: 1.2;
+    color: rgb(255, 255, 255);
+    text-align: justify;
+    
+    /*Borders - (Optional)*/
+    border-left: 15px solid #c7690c00;
+    border-right: 2px solid #c7690c00;
+    
+    /*Box Shadow - (Optional)*/
+    -moz-box-shadow: 2px 2px 15px #ccc;
+    -webkit-box-shadow: 2px 2px 15px #ccc;
+    box-shadow: 2px 2px 15px #ccc;
+  }
+  
+  blockquote::before{
+    content: "\201C"; /*Unicode for Left Double Quote*/
+    
+    /*Font*/
+    font-family: Georgia, serif;
+    font-size: 60px;
+    font-weight: bold;
+    color: #999;
+    
+    /*Positioning*/
+    position: absolute;
+    left: 10px;
+    top:5px;
+  }
+  
+  blockquote::after{
+    /*Reset to make sure*/
+    content: "";
+  }
+  
+  blockquote a{
+    text-decoration: none;
+    background: #eee;
+    cursor: pointer;
+    padding: 0 3px;
+    color: #c76c0c;
+  }
+  
+  blockquote a:hover{
+   color: #666;
+  }
+  
+  blockquote em{
+    font-style: italic;
+  }

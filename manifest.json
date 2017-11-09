@@ -4,7 +4,7 @@
   "name": "Better New Tab",
   "description": "This extensions enhances the New Tab experience",
   "version": "0.1",
-  "default_locale": "en",
+  
 
   "chrome_url_overrides": {
     "newtab": "index.html"
